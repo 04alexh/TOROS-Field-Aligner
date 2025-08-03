@@ -26,5 +26,4 @@ This section will explain the function parameters. (**function_parameter** [data
 **pixel_cutoff** [float]: Similar to dist but applied during the offset calibration. \
 \
 **snr_threshold** [int]: Minimum SNR you want a star to have. Assumes poisson noise (ie SNR ~ flux / sqrt(flux)). This is a filter applied before using starmatcher. 
-\
 
