@@ -14,10 +14,17 @@ star matching algorithms after several steps of filtering. The starmatcher picks
 ## Use
 This section will explain the function parameters. (**function_parameter** [data type]: Explanation of parameter.) \
 \
+\
 **master_file** [str]: The field whose starIDs are prefered. Other fields will have their starIDs matched to the IDs in the master. This is the field that should stay constant if you use this function many times. \
+\
 **comparator_file** [str]: The field whose starIDs get overwritten by the master IDs. \
+\
 **alligned_file** [str]: The file name you want for the new astropy table that gets written containing all matched stars (ignore my typo I dont wanna rewrite everything ;-;) \
+\
 **dist** [float]: The maximum distance to be considered by the starmatcher when iterating through stars. (keep this number low) \
+\
 **pixel_cutoff** [float]: Similar to dist but applied during the offset calibration. \
+\
 **snr_threshold** [int]: Minimum SNR you want a star to have. Assumes poisson noise (ie SNR ~ flux / sqrt(flux)). This is a filter applied before using starmatcher. 
+\
 
