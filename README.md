@@ -27,3 +27,6 @@ This section will explain the function parameters. (**function_parameter** [data
 \
 **snr_threshold** [int]: Minimum SNR you want a star to have. Assumes poisson noise (ie SNR ~ flux / sqrt(flux)). This is a filter applied before using starmatcher. 
 
+### Versions
+I've included two versions of the program. TOROSFieldAligner.py uses C++ for the actual matching. In the event the C++ stuff does not work, I have also included a version of the program (TOROSFieldAlignerSlow.py) that processes everything through python. It is much slower, but has the benefit of not needing extra installation steps to use.
+
